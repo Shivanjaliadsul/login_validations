@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form id="loginForm" onsubmit="formValidation()">
+      <div class="container">
+        <div class="email-pass">
+          <div class="email child">
+            <label for="username">Email Text Field Validation</label><br />
+            <input
+              class="input"
+              type="text"
+              id="email"
+              placeholder="Enter email address"
+              value=""
+              name="Email"
+              onkeyup="validateEmail()"
+            />
+            <div id="emailValidText"></div>
+          </div>
+          <div class="pass child">
+            <label for="username">Password Text Field Validation</label><br />
+            <input
+              class="input"
+              type="password"
+              id="pass"
+              placeholder="Enter password"
+              name="password"
+              onkeyup="validatePassword()"
+            />
+            <div id="passwordValidText"></div>
+          </div>
+        </div>
+
+        <div class="email-pass">
+          <div class="alpha child">
+            <label for="username">Alpha Text Field Validation</label><br />
+            <input
+              class="input"
+              type="text"
+              id="alpha"
+              placeholder="Enter alpha"
+              name="alphafield"
+              onkeyup="validateAlpha()"
+            />
+            <div id="alphaValidText"></div>
+          </div>
+
+          <div class="number child">
+            <label for="phone">Phone Number Field Validation</label><br />
+
+            <div
+              class="whole-block"
+              style="display: flex; flex-direction: column"
+            >
+              <div style="display: flex">
+                <div class="input block" style="display: flex">
+                  <select
+                    id="countryCode"
+                    style="width: 100%; height: 158%; margin-top: -12%"
+                    name="countryCode"
+                  >
+                    <option value="+91">+91</option>
+                    <option value="+1">+1</option>
+                    <option value="+44">+44</option>
+                  </select>
+                </div>
+                <input
+                  class="input block2"
+                  type="tel"
+                  id="phone"
+                  placeholder="Enter Phone Number"
+                  name="phonenumber"
+                  onkeyup="validatePhoneNumber()"
+                />
+              </div>
+              <div id="phoneNumberValidatetext"></div>
+            </div>
+            <!-- whole close -->
+          </div>
+        </div>
+
+        <div class="email-pass">
+          <div class="radio child">
+            <label for="username">Radio Field Validation</label><br />
+            <input
+              class="select"
+              type="radio"
+              id="radio_"
+              name="gender"
+            />Male<br />
+            <input
+              class="select"
+              type="radio"
+              id="radio_"
+              name="gender"
+            />Female
+          </div>
+          <div class="date child">
+            <label for="username">Date Picker(Birth Date)</label><br />
+            <input
+              class="input"
+              type="date"
+              id="date"
+              placeholder="Enter email address"
+              name="birthdate"
+            />
+          </div>
+        </div>
+
+        <div class="email-pass">
+          <div class="url child">
+            <label for="username">URL Field Validation</label><br />
+            <input
+              class="input"
+              type="url"
+              id="url"
+              placeholder="Enter URL"
+              name="url"
+              onkeyup="validateUrl() "
+            />
+            <div id="urlValidText"></div>
+          </div>
+          <div class="currency child">
+            <label for="username">Currency Field Validation</label><br />
+            <input
+              class="input"
+              type="number"
+              id="currency"
+              placeholder="Enter Currency"
+              name="currencyfield"
+              onkeyup="validateCurrency()"
+            />
+            <div id="currencyValidText"></div>
+          </div>
+        </div>
+
+        <div class="email-pass">
+          <div class="textarea child">
+            <label for="username">Textarea Field Validation</label><br />
+            <input
+              class="input"
+              type="text"
+              id="text"
+              placeholder="Textarea"
+              name="textarea"
+              onkeyup="validateTextarea()"
+            />
+            <div id="textareaValidText"></div>
+          </div>
+          <div class="pass child">
+            <label for="username">Checkbox Field Validation</label><br />
+
+            <div class="select">
+              <input type="checkbox" id="domain1" name="domain" />
+              <label for="domain1">MEAN</label><br />
+              <input type="checkbox" id="domain2" name="domain" />
+              <label for="domain2">Blockchain</label><br />
+              <input type="checkbox" id="domain3" name="domain" />
+              <label for="domain3">React</label><br />
+              <input type="checkbox" id="domain4" name="domain" />
+              <label for="domain4">BA</label><br />
+            </div>
+          </div>
+        </div>
+
+        <div class="email-pass">
+          <div class="email child">
+            <label for="username">Image Field Validation</label><br />
+            <input
+              class="input"
+              type="file"
+              id="image"
+              placeholder="Choose file"
+              name="username"
+              accept=".jpg,.png,.jpeg" onkeyup="validateImage()"
+            />
+            <div id="imageValidText"></div>
+          </div>
+          <div class="pass child">
+            <label for="color">Color Field Validation</label>
+            <input
+              class="input color"
+              style="box-sizing: border-box; height: 70%"
+              type="color"
+              id="color"
+              onkeyup="validateImage()"
+            />
+            <div id="imageField"></div>
+          </div>
+        </div>
+
+        <div class="submitbtn">
+          <button
+            type="submit"
+            class="btn-submit"
+            onclick="submit()"
+            onkeyup="validateForm()">
+            Submit
+</button>
+        </div>
+      </div>
+    </form>
+
+    <script src="form.js"></script>
+  </body>
+</html>

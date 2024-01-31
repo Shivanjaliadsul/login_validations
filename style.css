@@ -1,0 +1,60 @@
+body{
+    font-family: Arial, sans-serif;
+    background-color: rgb(209, 209, 233);
+}
+.container label{
+    font-weight:bold;
+    
+}
+.email-pass{
+    display: flex;
+
+}
+
+.child{
+    width: 100%;
+    margin: 1%;
+    
+}
+.input{
+    width: 100%;
+    padding: 6px;
+    padding-bottom: 1%;
+    margin-top: 0%;
+    margin-bottom: 2%;
+   
+}
+
+.whole-block{
+    display:inline-flex;
+    width: 100%;
+    
+}
+.select, .select input{
+    margin-top: 2%;
+}
+.select label{
+    font-weight: lighter;
+}
+.textarea input{
+    padding-bottom:  10%;
+}
+
+.block{
+    width: 15%;
+} 
+
+
+.block2{
+    width: 195%;
+    margin-right: -2%;
+    box-sizing: border-box;
+   
+}
+
+.btn-submit{
+    font-size: larger;
+    width: 40%;
+    margin-left: 30%;
+    
+}
